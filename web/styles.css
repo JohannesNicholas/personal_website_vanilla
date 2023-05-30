@@ -48,11 +48,13 @@ h1 {
     flex-direction: row;
 }
 
-a {
+.fg a, .experiences a {
     padding: 1rem 2rem;
     border-radius: 0.7rem;
     text-decoration: none;
 }
+
+
 
 .fg-button {
     margin: 1rem;
@@ -89,6 +91,7 @@ a {
 
     background-color: #1F1F1F;
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .experience {
@@ -155,6 +158,99 @@ a {
     max-height: 100%;
 }
 
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2F2F2F;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contact h2{
+    color: #646464;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.contact form {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.contact form .text-input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: #ffffff 0.2rem solid;
+    font-size: 1.3rem;
+    font-weight: 100;
+
+    /* allow  size drag only vertically*/
+    resize: vertical;
+}
+
+.contact label {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 2rem;
+
+    /* move to left side */
+    margin-right: auto;
+}
+
+.contact .send-button {
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    text-decoration: none;
+
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+
+    margin-top: 1rem;
+
+    border: transparent 0.2rem solid;
+
+    cursor: pointer;
+
+    background-color: #CE3D31;
+    color: #ffffff;
+
+    margin-left: auto;
+}
+
+.contact .send-button:hover {
+    background-color: #a03127de;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #666666;
+}
+
+footer p {
+    margin: 0.7rem;
+}
+
+footer a {
+    color: #666666;
+    text-decoration: none;
+    margin: 0 1rem;
+}
 
 
 /* When on mobile */
