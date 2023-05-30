@@ -171,6 +171,9 @@ a {
         height: 25rem;
         width: auto;
     }
+    .experience:nth-child(even) {
+        flex-direction: column;
+    }
 }
 
 
@@ -182,4 +185,5 @@ a {
     .fg-button-group {
         flex-direction: column;
     }
+    
 }
