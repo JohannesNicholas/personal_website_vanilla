@@ -167,6 +167,7 @@ h1 {
 .exp-textSide h2{
     font-size: 2rem;
     font-weight: 100;
+    line-height: 2.5rem;
 }
 
 .exp-textSide a{
@@ -206,6 +207,7 @@ h1 {
     color: #b1b1b1;
     font-size: 3rem;
     font-weight: 100;
+    text-align: center;
 }
 
 .contact form {
@@ -214,6 +216,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     width: 30rem;
+    max-width: 80%;
 }
 
 .contact form .text-input {
@@ -277,6 +280,7 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: #aaaaaa;
+    text-align: center;
 }
 
 footer p {
