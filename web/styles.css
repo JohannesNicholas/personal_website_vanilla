@@ -22,7 +22,40 @@ h1 {
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    /* Gradient background */
+    background-image: linear-gradient(to bottom, 
+        rgb(111, 26, 207), 
+        rgb(255, 255, 255),
+        rgb(49, 49, 49), 
+        rgb(111, 26, 207), 
+        rgb(49, 49, 49),
+        rgb(111, 26, 207), 
+        rgb(255, 255, 255),
+        rgb(111, 26, 207), 
+        rgb(255, 255, 255),
+        rgb(155, 155, 155),
+        rgb(255, 255, 255),
+        rgb(99, 99, 99),
+        rgb(49, 49, 49)
+    );
+    background-size: 100% 102%;
+    animation: bg-video 3s linear infinite;
 }
+
+/* animate the background */
+@keyframes bg-video {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
 
 .fg {
     top: 0;
@@ -170,7 +203,7 @@ h1 {
 }
 
 .contact h2{
-    color: #646464;
+    color: #b1b1b1;
     font-size: 3rem;
     font-weight: 100;
 }
@@ -243,7 +276,7 @@ footer {
     background-color: #1F1F1F;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #666666;
+    color: #aaaaaa;
 }
 
 footer p {
@@ -251,7 +284,7 @@ footer p {
 }
 
 footer a {
-    color: #666666;
+    color: #aaaaaa;
     text-decoration: none;
     margin: 0 1rem;
 }
