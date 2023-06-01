@@ -231,6 +231,10 @@ h1 {
     background-color: #a03127de;
 }
 
+.contact .send-button:active {
+    background-color: #4d1712;
+}
+
 footer {
     display: flex;
     justify-content: center;

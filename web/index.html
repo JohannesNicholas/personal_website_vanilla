@@ -59,7 +59,8 @@
 
     <div class="contact" name="contact" id="contact">
         <h2>Send me a message</h2>
-        <form action="" method="post">
+        <!-- Sends the message to this web hook: https://discord.com/api/webhooks/1113712176994201672/FsU3dw1I86aSGfZxMw8b_FcorkcAcwklkV_S-n96l7p4m0TnYacSLqIXz_MCTMM2EuCL -->
+        <form onsubmit="sendMessage(event)">
             <label for="name">Name</label>
             <input class="text-input" type="text" name="name" id="name" required>
             <label for="email">Email</label>
@@ -79,6 +80,9 @@
         <p>© Johannes Nicholas 2023</p>
         
     </footer>
+
+    
     
 </body>
+<script src="script.js"></script>
 </html>
