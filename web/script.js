@@ -1,6 +1,8 @@
 
 async function sendMessage(ev) {
 
+    snackbar("snackbar_sending");
+
     ev.preventDefault();
 
     const senderName = document.getElementById('name').value;
@@ -32,10 +34,16 @@ async function sendMessage(ev) {
     
     
     if (response.ok) {
-      alert('I have received your message!');
+        snackbar("snackbar_sent");
     } else {
-      alert('There was an error! Try again later!');
+        snackbar("snackbar_error");
     }
-      
-    
 }
+
+
+function snackbar(id) {
+    
+    let x = document.getElementById(id);
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
