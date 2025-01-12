@@ -22,7 +22,7 @@ async function sendMessage(ev) {
 
 
 
-    const webhookUrl = 'https://discord.com/api/webhooks/1113712176994201672/FsU3dw1I86aSGfZxMw8b_FcorkcAcwklkV_S-n96l7p4m0TnYacSLqIXz_MCTMM2EuCL';
+    const webhookUrl = 'https://discord.com/api/webhooks/1327943451941142581/YKLl8oSFzc5FhlVLArz-Lp0s70kLh-mjQXDwfpY5-7TXRdfZVBLYjfNeRuEGgDHyrkcX';
 
     const response = await fetch(webhookUrl, {
       method: 'POST',
