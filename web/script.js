@@ -21,9 +21,11 @@ async function sendMessage(ev) {
     };
 
 
-
-    const webhookUrl = 'https://discord.com/api/webhooks/1327943451941142581/YKLl8oSFzc5FhlVLArz-Lp0s70kLh-mjQXDwfpY5-7TXRdfZVBLYjfNeRuEGgDHyrkcX';
-
+    //get the webhookUrl from ./webhookUrl.json using a get request
+    const webhookUrl = await fetch('https://joeyn.dev/assets/webhoockUrl.json')
+      .then((response) => response.json())
+      .then((data) => data.url);
+    
     const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
